@@ -5,6 +5,12 @@
     color: white;
 }
 
+body {
+    background-image: url('https://uhdwallpapers.org/uploads/cache/3018519849/skyscraper-from-toronto_600x338-mm-90.webp');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
 #me {
     height: 150px;
     width: 150px;
@@ -75,4 +81,26 @@ footer {
 
 span {
     color: red;
+}
+
+@media screen and (max-width: 900px) {
+    body {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    aside {
+        float: none;
+        margin: 50px;
+        padding: 20px;
+        height: auto;
+        border-radius: 10px;
+        width: 400px;
+    }
+    aside ul {
+        list-style-type: none;
+    }
+    .main {
+        margin: 50px;
+    }
 }
