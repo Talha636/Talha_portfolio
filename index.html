@@ -4,37 +4,61 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Talha Portfolio</title>
     <link rel="stylesheet" href="./assets/css/styles.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Nunito&display=swap" rel="stylesheet">
-    <title>Talha Portfolio</title>
 </head>
 <body>
-<aside>
-    <section>
-        <img src="./assets/images/Talha.JPG" alt="Me" height="200px">
-        <h3>Talha Latif</h3>
-        <h5>Bootcamp Student</h5>
-    </section>
-    <nav>
-        <ul>
-            <li><a href="#">Bio</a></li>
-            <li><a href="#">Projects</a></li>
-            <li><a href="#">Contact me</a></li>
-        </ul>
-    </nav>
-</aside>
-<main>
-    <h2>Bio</h2>
-    <p>Hello and welcome to my portfolio, the purpose of this page is to show my creativity and skills when it comes to coding. This web page will be updated with more skills as I learn them. I built this page using only HTML and CSS. Check out my navigation bar on the left side of the screen and feel free to reach out to me using the links  in the 'Contact Me' section.</p>
-
-
-</main>
-
-<footer>
-    <p>Made with ❤️, HTML and CSS.</p>
-</footer>
-
+    <!-- Side bar -->
+    <aside>
+        <!-- Pic, Name and Title -->
+        <section>
+            <img id="me" src="./assets/images/Talha.JPG" alt="My picture">
+            <h2>Talha Latif</h3>
+            <h4>Bootcamp Student</h5>
+        </section>
+        <!-- Nav -->
+        <nav>
+            <ul>
+                <li><a href="#bio">Bio</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#contact">Contact me</a></li>
+            </ul>
+        </nav>
+    </aside>
+    <!-- Main Content -->
+    <main>
+        <!-- Bio -->
+        <div id="bio" class="main">
+            <h2>Bio</h2>
+            <p>Hello and welcome to my portfolio, the purpose of this page is to show my creativity and skills when it comes to coding. This web page will be updated with more skills as I learn them. I built this page using only HTML and CSS. Check out my navigation bar on the left side of the screen and feel free to reach out to me using the links  in the 'Contact Me' section. Lorem ipsum, dolor sit amet consectetur adipisicing elit. Odit, incidunt voluptates! Eligendi modi excepturi illum tenetur quasi magni error et, eaque sint dolore similique velit earum voluptas, impedit rerum! Saepe!</p>
+        </div>
+        <!-- Projects -->
+        <div id="projects" class="main">
+            <h2>Projects</h2>
+            <a href="https://talha636.github.io/code_refactor/"><img id='first' src="./assets/images/Screen Shot 2021-09-15 at 10.01.09 AM.png" alt="Code refactor web page"></a>
+            <a href="https://talha636.github.io/mini1/"><img src="./assets/images/Screen Shot 2021-09-15 at 8.07.28 PM.png" alt="Mini project 1"></a>
+            <a href="https://talha636.github.io/mini2/"><img src="./assets/images/Screen Shot 2021-09-15 at 8.05.20 PM.png" alt="Mini project 2"></a>
+        </div>
+        <!-- Contact me -->
+        <div id="contact" class="main">
+            <h2>Contact Me</h2>
+            <form>
+                <label for="name">Name:</label>
+                <input type="text" id="name" placeholder="First Last">
+                <label for="email">E-Mail:</label>
+                <input type="text" id="email" placeholder="someone@something.com">
+                <label for="reason">Reason:</label>
+                <input type="text" id="reason" placeholder="10 words or less">
+                <button>Submit</button>
+            </form>
+        </div>
+        <!-- Footer -->
+        <footer>
+            <h5>Made by <span>Talha Latif ❤️</span></h5>
+        </footer>
+    </main>
 </body>
 </html>
